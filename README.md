@@ -11,7 +11,7 @@
     <br />
     <a href="#code">View Code</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Read Preprint</a>
+    <a href="https://bioarchivelink.md">Read Preprint</a>
   </p>
 </div>
 
@@ -21,7 +21,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a>
+    <li><a href="#description">Description</a>
     <li><a href="#code">Code</a>
       <ul>
         <li><a href="#initial-qc">Initial Quality Control</a></li>
@@ -30,16 +30,14 @@
         <li><a href="#further-analysis">Further Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#reference-mapping">AML scAtlas as a Single-Cell Reference</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Description
 
 [![Data Visualisation][data-image]](https://cellxgene.bmh.manchester.ac.uk/AML)
 
@@ -72,16 +70,17 @@ To handle batch effects, we performed [benchmarking](https://github.com/jesswhit
 
 #### AML scAtlas Analysis
 
-[Scripts](https://github.com/jesswhitts/AML-scAtlas/tree/main/3_Analysis) used to carry out the main analysis steps on the complete AML scAtlas, split into relevant sub-folders. 
+Scripts used to carry out the [main analysis](https://github.com/jesswhitts/AML-scAtlas/tree/main/3_Analysis) steps on the complete AML scAtlas, split into relevant sub-folders. 
 
 1. Batch Correction
 2. Dimensionality reduction
 3. Clustering
-4. Annotation - automated annotation tool scripts and code used to identify marker genes, used for manual curation
+4. Annotation
 
 #### Further Analysis
 
-Code used to identify leukemic stem cell (LSC) populations within AML scAtlas. t(8;21)
+1. Code used to [identify leukemic stem cell (LSC) populations](https://github.com/jesswhitts/AML-scAtlas/tree/main/4_Extended_Analyses/1_HSPCs) within AML scAtlas.
+2. Analysis performed on the t(8;21) data of the AML scAtlas to [identify age-associated GRN in t(8;21) AML](https://github.com/jesswhitts/AML-scAtlas/tree/main/4_Extended_Analyses/2_AML_ETO), and subsequent [validation with the TARGET/BeatAML cohorts](https://github.com/jesswhitts/AML-scAtlas/tree/main/4_Extended_Analyses/2_AML_ETO/TARGET_BeatAML), and [Lambo et al data](https://github.com/jesswhitts/AML-scAtlas/tree/main/4_Extended_Analyses/2_AML_ETO/Lambo_et_al)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +89,8 @@ Code used to identify leukemic stem cell (LSC) populations within AML scAtlas. t
 ## Contact
 
 * Jessica Whittle (author) - jessica.whittle@cruk.manchester.ac.uk
-* Mudassar Iqbal (co-corresponding author) - 
-* Georges Lacaud (co-corresponding author) - 
+* Mudassar Iqbal (corresponding author) - mudassar.iqbal@manchester.ac.uk
+* Georges Lacaud (corresponding author) - georges.lacaud@cruk.manchester.ac.uk
+* Syed Murtuza Baker (corresponding author) - syed.murtuzabaker@manchester.ac.uk
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
