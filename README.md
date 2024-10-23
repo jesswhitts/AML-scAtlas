@@ -43,7 +43,7 @@
 
 Using large scale data integration of publicly available single-cell data, we created a single-cell transcriptomic atlas of acute myeloid leukaemia (AML). The data is hosted for easy gene expression exploration, and is downloadable as an AnnData object. 
 
-[data-image]: https://github.com/jesswhitts/AML-scAtlas/blob/main/images/celltype_umap.png
+[data-image]: https://github.com/jesswhitts/AML-scAtlas/blob/main/rm_images/celltype_umap.png
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CODE -->
