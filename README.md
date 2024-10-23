@@ -85,11 +85,6 @@ Code used to identify leukemic stem cell (LSC) populations within AML scAtlas. t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## AML scAtlas as a Single-Cell Reference
-
-AML scAtlas can be used as a single-cell reference for new single-cell datasets. An example notebook for this is included.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!--Contact -->
 ## Contact
@@ -99,9 +94,3 @@ AML scAtlas can be used as a single-cell reference for new single-cell datasets.
 * Georges Lacaud (co-corresponding author) - 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!--Acknowledgements -->
-## Acknowledgements
-
-AML scAtlas can be used as a single-cell reference for new single-cell datasets. An example notebook for this is included.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
