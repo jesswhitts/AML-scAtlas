@@ -28,32 +28,13 @@ adata.obs['pruned.labels'] = adata.obs['vgalen_pruned_labels']
 
 
 #################################################################################################################################
-############################################## Check CD34 Expression Across Clusters ############################################
+####################################################### Select HSPC Clusters ####################################################
 #################################################################################################################################
 
 print(adata.n_obs, adata.n_vars)
 
-# Calculate Expression Per Cluster
-obs_df = sc.get.obs_df(adata, keys=['cluster','CD34'], use_raw=True)
-grouped = obs_df.groupby("cluster", observed=True)
-mean, var = grouped.mean(), grouped.var()
-
-celltypes = sc.get.obs_df(adata, keys=['cluster','main_celltype'], use_raw=True) #layer='normalised_corrected_counts')
-celltypes = celltypes.drop_duplicates(subset='cluster')
-celltypes = celltypes.set_index('cluster')
-
-df = mean.join(celltypes)
-df.to_csv("outs/cluster_CD34_celltype.csv")
-
-# Select Clusters Above Threshold
-M = df['CD34']
-nmads = 1.5
-CD34_high = (M < np.median(M) - nmads * median_abs_deviation(M)) | (np.median(M) + nmads * median_abs_deviation(M) < M)
-select = df[CD34_high==True]
-
-clusters = list(select.index)
-subset = np.array([s in clusters for s in adata.obs.cluster])
-adata = adata[subset].copy()
+# Select HSPC Clusters
+adata = adata[adata.obs['main_celltype']=='HSPC']
 
 # Visualise Selected Clusters
 sc.pl.umap(adata, color="main_celltype", save="_" + save_name + "_original_main_celltype.png")
