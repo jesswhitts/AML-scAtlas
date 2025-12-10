@@ -11,7 +11,7 @@
     <br />
     <a href="#code">View Code</a>
     ·
-    <a href="https://bioarchivelink.md">Read Preprint</a>
+    <a href="https://doi.org/10.7554/eLife.104978.3">Read eLife Publication</a>
   </p>
 </div>
 
