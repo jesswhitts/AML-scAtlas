@@ -93,69 +93,6 @@ data = [aml681,aml682,aml683,aml684,aml685]
 adata = ad.concat(data, merge="same")
 print(adata)
 
-print("Wu")
-# #wu - cell filtering performed
-# #samples 1-20
-amlP01 = sc.read_h5ad("../5-wu/amlP01/outs/AMLP01_cell_filtered.h5ad")
-amlP02 = sc.read_h5ad("../5-wu/amlP02/outs/AMLP02_cell_filtered.h5ad")
-amlP03 = sc.read_h5ad("../5-wu/amlP03/outs/AMLP03_cell_filtered.h5ad")
-amlP04 = sc.read_h5ad("../5-wu/amlP04/outs/AMLP04_cell_filtered.h5ad")
-amlP05 = sc.read_h5ad("../5-wu/amlP05/outs/AMLP05_cell_filtered.h5ad")
-
-amlP06 = sc.read_h5ad("../5-wu/amlP06/outs/AMLP06_cell_filtered.h5ad")
-amlP07 = sc.read_h5ad("../5-wu/amlP07/outs/AMLP07_cell_filtered.h5ad")
-amlP08 = sc.read_h5ad("../5-wu/amlP08/outs/AMLP08_cell_filtered.h5ad")
-amlP09 = sc.read_h5ad("../5-wu/amlP09/outs/AMLP09_cell_filtered.h5ad")
-amlP10 = sc.read_h5ad("../5-wu/amlP10/outs/AMLP10_cell_filtered.h5ad")
-
-amlP11 = sc.read_h5ad("../5-wu/amlP11/outs/AMLP11_cell_filtered.h5ad")
-amlP12 = sc.read_h5ad("../5-wu/amlP12/outs/AMLP12_cell_filtered.h5ad")
-amlP13 = sc.read_h5ad("../5-wu/amlP13/outs/AMLP13_cell_filtered.h5ad")
-amlP14 = sc.read_h5ad("../5-wu/amlP14/outs/AMLP14_cell_filtered.h5ad")
-amlP15 = sc.read_h5ad("../5-wu/amlP15/outs/AMLP15_cell_filtered.h5ad")
-
-amlP16 = sc.read_h5ad("../5-wu/amlP16/outs/AMLP16_cell_filtered.h5ad")
-amlP17 = sc.read_h5ad("../5-wu/amlP17/outs/AMLP17_cell_filtered.h5ad")
-amlP18 = sc.read_h5ad("../5-wu/amlP18/outs/AMLP18_cell_filtered.h5ad")
-amlP19 = sc.read_h5ad("../5-wu/amlP19/outs/AMLP19_cell_filtered.h5ad")
-amlP20 = sc.read_h5ad("../5-wu/amlP20/outs/AMLP20_cell_filtered.h5ad")
-
-# #wu
-# #samples 21-42
-amlP21 = sc.read_h5ad("../5-wu/amlP21/outs/AMLP21_cell_filtered.h5ad")
-amlP22 = sc.read_h5ad("../5-wu/amlP22/outs/AMLP22_cell_filtered.h5ad")
-amlP23 = sc.read_h5ad("../5-wu/amlP23/outs/AMLP23_cell_filtered.h5ad")
-amlP24 = sc.read_h5ad("../5-wu/amlP24/outs/AMLP24_cell_filtered.h5ad")
-amlP25 = sc.read_h5ad("../5-wu/amlP25/outs/AMLP25_cell_filtered.h5ad")
-
-amlP26 = sc.read_h5ad("../5-wu/amlP26/outs/AMLP26_cell_filtered.h5ad")
-amlP27 = sc.read_h5ad("../5-wu/amlP27/outs/AMLP27_cell_filtered.h5ad")
-amlP28 = sc.read_h5ad("../5-wu/amlP28/outs/AMLP28_cell_filtered.h5ad")
-amlP29 = sc.read_h5ad("../5-wu/amlP29/outs/AMLP29_cell_filtered.h5ad")
-amlP30 = sc.read_h5ad("../5-wu/amlP30/outs/AMLP30_cell_filtered.h5ad")
-
-amlP31 = sc.read_h5ad("../5-wu/amlP31/outs/AMLP31_cell_filtered.h5ad")
-amlP32 = sc.read_h5ad("../5-wu/amlP32/outs/AMLP32_cell_filtered.h5ad")
-amlP33 = sc.read_h5ad("../5-wu/amlP33/outs/AMLP33_cell_filtered.h5ad")
-amlP34 = sc.read_h5ad("../5-wu/amlP34/outs/AMLP34_cell_filtered.h5ad")
-amlP35 = sc.read_h5ad("../5-wu/amlP35/outs/AMLP35_cell_filtered.h5ad")
-
-amlP36 = sc.read_h5ad("../5-wu/amlP36/outs/AMLP36_cell_filtered.h5ad")
-amlP37 = sc.read_h5ad("../5-wu/amlP37/outs/AMLP37_cell_filtered.h5ad")
-amlP38 = sc.read_h5ad("../5-wu/amlP38/outs/AMLP38_cell_filtered.h5ad")
-amlP39 = sc.read_h5ad("../5-wu/amlP39/outs/AMLP39_cell_filtered.h5ad")
-amlP40 = sc.read_h5ad("../5-wu/amlP40/outs/AMLP40_cell_filtered.h5ad")
-
-amlP41 = sc.read_h5ad("../5-wu/amlP41/outs/AMLP41_cell_filtered.h5ad")
-amlP42 = sc.read_h5ad("../5-wu/amlP42/outs/AMLP42_cell_filtered.h5ad")
-
-data = [amlP01,amlP02,amlP03,amlP04,amlP05,amlP06,amlP07,amlP08,amlP09,amlP10,
-        amlP11,amlP12,amlP13,amlP14,amlP15,amlP16,amlP17,amlP18,amlP19,amlP20,amlP21,
-        amlP22,amlP23,amlP24,amlP25,amlP26,amlP27,amlP28,amlP29,amlP30,amlP31,amlP32,amlP33,
-        amlP34,amlP35,amlP36,amlP37,amlP38,amlP39,amlP40,amlP41,amlP42]
-adata = ad.concat(data, merge="same")
-print(adata)
-
 print("Zhai")
 #zhai - cells already filtered
 amlS220 = sc.read_h5ad("../6-zhai/amlS220/outs/AMLS220_unfiltered.h5ad")
@@ -406,15 +343,6 @@ data = [bm6161,bm6162,bm6163,bm6164,bm6165,bm6166,bm6167,bm6168,bm6169,bm6170,bm
 adata = ad.concat(data, merge="same")
 print(adata)
 
-print("Wu")
-#wu - cell filtering performed
-n01 = sc.read_h5ad("../healthy_donors/2-wu/N01/outs/N01_cell_filtered.h5ad")
-n02 = sc.read_h5ad("../healthy_donors/2-wu/N02/outs/N02_cell_filtered.h5ad")
-
-data = [n01,n02]
-adata = ad.concat(data, merge="same")
-print(adata)
-
 print("Van Galen")
 #van galen - cell filtering NOT performed
 bm1 = sc.read_h5ad("../healthy_donors/3-van-galen/BM1/outs/BM1_unfiltered.h5ad")
@@ -465,10 +393,6 @@ data = [aml508084,aml548327,aml721214,aml782328,aml809653,
         aml027,aml035,
         aml1012,aml210A,aml314,aml328,aml329,aml371,aml419A,aml420B,aml475,aml556,aml707B,aml722B,aml870,aml916,aml921A,aml997,
         aml681,aml682,aml683,aml684,aml685,
-        amlP01,amlP02,amlP03,amlP04,amlP05,amlP06,amlP07,amlP08,amlP09,amlP10,
-        amlP11,amlP12,amlP13,amlP14,amlP15,amlP16,amlP17,amlP18,amlP19,amlP20,amlP21,
-        amlP22,amlP23,amlP24,amlP25,amlP26,amlP27,amlP28,amlP29,amlP30,amlP31,amlP32,amlP33,
-        amlP34,amlP35,amlP36,amlP37,amlP38,amlP39,amlP40,amlP41,amlP42,
         amlS220,amlS2275,amlS232,amlS292,amlS3432,amlS914,
         amlV01,amlV02,amlV03,amlV04,
         aml013,aml016,aml049,aml060,aml068,aml070,aml072,aml076,aml101,
@@ -490,7 +414,6 @@ data = [aml508084,aml548327,aml721214,aml782328,aml809653,
         bm6161,bm6162,bm6163,bm6164,bm6165,bm6166,bm6167,bm6168,bm6169,bm6170,
         bm6171,bm6172,bm6173,bm6174,bm6175,bm6176,bm6177,bm6178,bm6179,bm6180,
         bm6181,bm6182,bm6183,bm6184,bm6185,
-        n01,n02,
         bm1,bm2,bm3,bm4,bm5a,bm5b,
         setty,
         bmA00,
@@ -508,10 +431,6 @@ del(aml508084,aml548327,aml721214,aml782328,aml809653,
         aml027,aml035,
         aml1012,aml210A,aml314,aml328,aml329,aml371,aml419A,aml420B,aml475,aml556,aml707B,aml722B,aml870,aml916,aml921A,aml997,
         aml681,aml682,aml683,aml684,aml685,
-        amlP01,amlP02,amlP03,amlP04,amlP05,amlP06,amlP07,amlP08,amlP09,amlP10,
-        amlP11,amlP12,amlP13,amlP14,amlP15,amlP16,amlP17,amlP18,amlP19,amlP20,amlP21,
-        amlP22,amlP23,amlP24,amlP25,amlP26,amlP27,amlP28,amlP29,amlP30,amlP31,amlP32,amlP33,
-        amlP34,amlP35,amlP36,amlP37,amlP38,amlP39,amlP40,amlP41,amlP42,
         amlS220,amlS2275,amlS232,amlS292,amlS3432,amlS914,
         amlV01,amlV02,amlV03,amlV04,
         aml013,aml016,aml049,aml060,aml068,aml070,aml072,aml076,aml101,
@@ -533,7 +452,6 @@ del(aml508084,aml548327,aml721214,aml782328,aml809653,
         bm6161,bm6162,bm6163,bm6164,bm6165,bm6166,bm6167,bm6168,bm6169,bm6170,
         bm6171,bm6172,bm6173,bm6174,bm6175,bm6176,bm6177,bm6178,bm6179,bm6180,
         bm6181,bm6182,bm6183,bm6184,bm6185,
-        n01,n02,
         bm1,bm2,bm3,bm4,bm5a,bm5b,
         setty,
         bmA00,
@@ -546,6 +464,70 @@ print("Data Combined")
 print(adata.n_obs, adata.n_vars)
 adata.obs = adata.obs.drop(columns=['doublet_score','predicted_doublets','doublet_info','van-galen-celltype',
                                    'samples', 'Broad_cell_identity', 'Cell_type_identity', 'run', "outlier", "mt_outlier"])
+
+#################################################################################################################################
+################################################### Fix Some Metadata Errors ####################################################
+#################################################################################################################################
+
+# Fix some missing donor ids
+sample_to_donor = {
+    "BM5":"BM5",
+    "HCA1a": "HCA1", "HCA1b": "HCA1",
+    "HCA2a": "HCA2", "HCA2b": "HCA2",
+    "HCA3a": "HCA3", "HCA3b": "HCA3",
+    "HCA4a": "HCA4", "HCA4b": "HCA4",
+    "HCA5a": "HCA5", "HCA5b": "HCA5",
+    "HCA6a": "HCA6", "HCA6b": "HCA6",
+    "HCA7a": "HCA7", "HCA7b": "HCA7",
+    "HCA8a": "HCA8", "HCA8b": "HCA8",
+}
+
+mask = adata.obs["donor"].isna()
+adata.obs.loc[mask, "donor"] = (
+    adata.obs.loc[mask, "sample"].map(sample_to_donor)
+)
+
+# Update some incorrect ids (found 3 errros after checking Naldini dataset)
+mask = adata.obs['sample'] == 'AMLM88' # This one also has some incorrect clinical info - change this too - others ok
+adata.obs.loc[mask, "donor"] = 'AMLN23_P18'
+adata.obs.loc[mask, "age"] = '73'
+adata.obs.loc[mask, "cytogenetics"] = '45,XY,-7'
+adata.obs.loc[mask, "mutations"] = 'unknown'
+adata.obs.loc[mask, "mutational_subgroup"] = 'unknown'
+
+mask = adata.obs['sample'] == 'AMLM48'
+adata.obs.loc[mask, "donor"] = 'AMLN23_P15'
+
+mask = adata.obs['sample'] == 'AMLM41'
+adata.obs.loc[mask, "donor"] = 'AMLN23_P13'
+
+# There is a sample ID duplicated - change this
+mask = (
+    (adata.obs['donor'] == 'AMLL0048') &
+    (adata.obs['translocations'] == 'MLL-AF9')
+)
+adata.obs.loc[mask, 'sample'] = 'AMLL048'
+
+# Caron et al, 2020 - although mean age is 2, we don't know the exact ages of these (although they are children)
+mask = adata.obs['study'] == 'caron_2020'
+adata.obs.loc[mask, "age"] = 'unknown'
+
+# Velten et al, 2021 - states adult males
+mask = adata.obs['study'] == 'velten_2021'
+adata.obs.loc[mask, "gender"] = 'M'
+
+# Lie et al, 2023 - change age to match source data
+mask = adata.obs['sample'] == 'AMLPT08'
+adata.obs.loc[mask, "age"] = '29'
+
+# Lasry et al - change age to match source data
+mask = adata.obs['sample'] == 'AMLL3133'
+adata.obs.loc[mask, "age"] = '57'
+
+# Ben-C et al, 2023 - change age to match source data
+mask = adata.obs['sample'] == 'AMLA02'
+adata.obs.loc[mask, "age"] = '59'
+
 
 adata.write_h5ad(results_file, compression="gzip")
 
@@ -797,6 +779,12 @@ adata = adata[adata.obs['pct_counts_mt'] < 10, :]
 
 print(f"Number of cells after filtering of low quality cells: {adata.n_obs}")
 
+# Remove Samples with Low Cell Counts
+cell_counts = adata.obs['sample'].value_counts()
+keep = cell_counts.index[cell_counts >= 50]
+adata = adata[adata.obs['sample'].isin(keep)].copy()
+
+print(f"Number of cells remaining: {adata.n_obs}")
 
 # Gene Filtering
 print("Removing Genes Detected in Fewer than 50 Cells")
